@@ -59,4 +59,4 @@ jobs:
           app-name: 'floraculum'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4E27A93079B94D519D36945BD6A931F9 }}
+          publish-profile: ${{ secrets.APP_PUBLISH_PROFILE }}
