@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
 import ImageUpload from './components/ImageUpload';
 import PlantInfo from './components/PlantInfo';
 import { FaUpload, FaRobot, FaInfoCircle, FaLeaf, FaTint, FaSun } from 'react-icons/fa';
