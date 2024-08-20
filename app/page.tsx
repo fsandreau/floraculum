@@ -46,7 +46,7 @@ export default function Home() {
       });
     } catch (error) {
       console.error('Error identifying plant:', error);
-      alert('Failed to identify plant. Please try again.');
+      alert('Failed to identify plant. Please try again.' + error);
     } finally {
       setIsLoading(false);
     }
