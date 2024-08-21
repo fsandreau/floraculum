@@ -45,8 +45,9 @@ export default function Home() {
         imageUrl: URL.createObjectURL(file),
       });
     } catch (error) {
+      console.error("GOOGLE_GEMINI_API_KEY = " + process.env.GOOGLE_GEMINI_API_KEY!);
       console.error('Error identifying plant:', error);
-      alert('Failed to identify plant. Please try again.' + error);
+      alert('Failed to identify plant. Please try again. ' + process.env.GOOGLE_GEMINI_API_KEY!);
     } finally {
       setIsLoading(false);
     }
