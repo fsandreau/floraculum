@@ -79,7 +79,8 @@ export async function POST(req: NextRequest) {
       },
     });
   } catch (error) {
-    console.error('Error identifying plant:', error);
+    console.error("GOOGLE_GEMINI_API_KEY = " + process.env.GOOGLE_GEMINI_API_KEY!);
+    console.error('Error identifying plant:');
     return NextResponse.json({ error: 'Failed to identify plant' }, { status: 500 });
   }
 }
